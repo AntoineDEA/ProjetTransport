@@ -1,0 +1,55 @@
+﻿  ProjetTransport.cpp
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(25,49): error C2664: 'void Car::addCar(int,char *,int,int,char *,int)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(25,20): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Car.h(15,8): message : voir la déclaration de 'Car::addCar'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(26,48): error C2664: 'void Car::addCar(int,char *,int,int,char *,int)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(26,20): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Car.h(15,8): message : voir la déclaration de 'Car::addCar'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(34,48): error C2664: 'void Bike::addBike(int,char *,int,int,int,char)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(34,22): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Bike.h(16,8): message : voir la déclaration de 'Bike::addBike'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(35,48): error C2664: 'void Bike::addBike(int,char *,int,int,int,char)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(35,22): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Bike.h(16,8): message : voir la déclaration de 'Bike::addBike'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(43,53): error C2664: 'void Scooter::addScooter(int,char *,int,int,char *,int)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(43,25): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Scooter.h(15,8): message : voir la déclaration de 'Scooter::addScooter'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(44,53): error C2664: 'void Scooter::addScooter(int,char *,int,int,char *,int)' : impossible de convertir l'argument 2 de 'int' en 'char *'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(44,25): message : La conversion d'un type intégral en type pointeur nécessite reinterpret_cast, un cast de style C ou un cast de style fonction
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Scooter.h(15,8): message : voir la déclaration de 'Scooter::addScooter'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(52,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(52,41): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(52,34): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(52,27): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,41): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,34): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,27): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(61,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(61,38): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(61,31): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(61,24): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,38): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,31): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,24): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(70,48): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(70,28): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(70,21): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,49): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,29): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,22): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(79,46): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(79,30): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(79,23): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,46): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,30): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,23): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(88,49): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(88,29): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(88,22): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,49): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,29): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,22): warning C4309: 'argument' : troncation de valeur de constante
+  Vehicule.cpp
+  Génération de code en cours...
