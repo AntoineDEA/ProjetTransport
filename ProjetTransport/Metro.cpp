@@ -24,7 +24,7 @@ void Metro::addMetro(int idG, short departureG, short arrivalG, int busNumberG, 
 
 
 	cout << 
-		"Metro add :\n ID:" << myMetro.id <<
+		"Metro add : ID:" << myMetro.id <<
 		"| Departure :" << myMetro.departure <<
 		"| Arrival:" << myMetro.arrival <<
 		"| Metro Number :" << myMetro.metroNumber <<
@@ -46,5 +46,42 @@ void Metro::showMetro()
 		cout << "| Metro number :" << myMetroTemp.metroNumber ;
 		cout << "| Number of places :" << myMetroTemp.numberOfPlaces << "\n";
 	}
+}
+
+void Metro::deleteMetro(int d)
+{
+	int vectorSize = MyMetroes.size();
+	Metro myMetroTemp;
+	for (int i = 1; i < vectorSize; i++)
+	{
+		myMetroTemp = MyMetroes[i];
+		if (myMetroTemp.id == d)
+		{
+			MyMetroes.erase(MyMetroes.begin() + i);
+			return;
+		}
+	}
+	cout << "This metro already doesnt exist\n";
+}
+
+Metro Metro::findMetro(int z)
+{
+	int vectorSize = MyMetroes.size();
+	Metro myMetroTemp;
+	for (int i = 0; i < vectorSize; i++)
+	{
+		myMetroTemp = MyMetroes[i];
+		if (myMetroTemp.id == z)
+		{
+			cout << "We find your transport here is the details:\n";
+			cout << "| ID :" << myMetroTemp.id;
+			cout << "| Departure :" << myMetroTemp.departure;
+			cout << "| Arrival :" << myMetroTemp.arrival;
+			cout << "| Metro number :" << myMetroTemp.metroNumber;
+			cout << "| Number of places :" << myMetroTemp.numberOfPlaces << "\n";
+			return myMetroTemp;
+		}
+	}
+	cout << "This transport does not exist\n";
 }
 

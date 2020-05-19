@@ -18,6 +18,7 @@ int main()
 {
     //-----------------------------------------------------------------------------
     //This Part show the creation of each objects and show each list of objects
+    //This Part need to be active to test all the others functions
     //-----------------------------------------------------------------------------
     
     cout << "CAR CREATION";
@@ -50,7 +51,7 @@ int main()
     cout << "PASSENGER CREATION\n";
     Passenger temp3;
     temp3.addPassenger(1, 'FGH', 'KDU', 'HDU', 12548695, 'H', 48, 0, 1, 1, 1);
-    temp3.addPassenger(5, 'FPH', 'KOU', 'HPU', 12856995, 'H', 28, 1, 1, 1, 1);
+    temp3.addPassenger(2, 'FPH', 'KOU', 'HPU', 12856995, 'H', 28, 1, 1, 1, 1);
     cout << "\n-----------------------------------------------\n";
     cout << "SHOW PASSENGERSS \n";
     temp3.showPassenger();
@@ -68,7 +69,7 @@ int main()
     cout << "BUS CREATION\n";
     Bus temp5;
     temp5.addBus(1, 'FGH', 'KDU', 256, 60, 1, 0);
-    temp5.addBus(11, 'FGH', 'KDU', 966, 60, 1, 1);
+    temp5.addBus(2, 'FGH', 'KDU', 966, 60, 1, 1);
     cout << "\n-----------------------------------------------\n";
     cout << "SHOW BUSSES \n";
     temp5.showBus();
@@ -90,12 +91,213 @@ int main()
     cout << "-----------------------------------------------\n";
     cout << "SHOW TRAMS \n";
     temp7.showTram();
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
 
-    //------------------------------------------------------------------------------
-
+    //-----------------------------------------------------------------------------
+    //This Part show the test of the function validity last technical consult of a vehicle
+    //-----------------------------------------------------------------------------
+    
+    /*
+    cout << "\n\nTECHNICAL CONSULT CHECK \n\n";
+    cout << "First test with a car having the last technical consult made in 2019\n";
     temp.carValid(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Second test with a car having the last technical consult made in 2000\n";
     temp.carValid(2);
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    */
 
-    cout << "Fin";
+    //-----------------------------------------------------------------------------
+    //This Part show the test of each find functions of each classes
+    //-----------------------------------------------------------------------------
+
+    /*
+    cout << "\n\nFIND FUNCTION CHECK\n\n";
+    cout << "Find a Car with ID=1 (exist):\n";
+    temp.findCar(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Car with ID=2 (exist):\n";
+    temp.findCar(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Car with ID=3 (dont exist):\n";
+    temp.findCar(3);
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bike with ID=1 (exist):\n";
+    temp1.findBike(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bike with ID=2 (exist):\n";
+    temp1.findBike(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bike with ID=3 (dont exist):\n";
+    temp1.findBike(3);
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Scooter with ID=1 (exist):\n";
+    temp2.findScooter(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Scooter with ID=2 (exist):\n";
+    temp2.findScooter(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Scooter with ID=3 (dont exist):\n";
+    temp2.findScooter(3);
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Passenger with ID=1 (exist):\n";
+    temp3.findPassenger(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Passenger with ID=2 (exist):\n";
+    temp3.findPassenger(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Passenger with ID=3 (dont exist):\n";
+    temp3.findPassenger(3);
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Driver with ID=1 (exist):\n";
+    temp4.findDriver(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Driver with ID=2 (exist):\n";
+    temp4.findDriver(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Driver with ID=3 (dont exist):\n";
+    temp4.findDriver(3);
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bus with ID=1 (exist):\n";
+    temp5.findBus(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bus with ID=2 (exist):\n";
+    temp5.findBus(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Bus with ID=3 (dont exist):\n";
+    temp5.findBus(3);
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Metro with ID=1 (exist):\n";
+    temp6.findMetro(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Metro with ID=2 (exist):\n";
+    temp6.findMetro(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Metro with ID=3 (dont exist):\n";
+    temp6.findMetro(3);
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Tram with ID=1 (exist):\n";
+    temp7.findTram(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Tram with ID=2 (exist):\n";
+    temp7.findTram(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Find a Tram with ID=3 (dont exist):\n";
+    temp7.findTram(3);
+    */
+
+    //-----------------------------------------------------------------------------
+    //This Part show the test of each delete functions of each classes
+    //-----------------------------------------------------------------------------
+    
+    cout << "\n\nDELETE FUNCTION CHECK\n\n";
+    cout << "CAR\n";
+    cout << "Before\n";
+    temp.showCar();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Car with ID=2 (exist):\n";
+    temp.deleteCar(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Car with ID=3 (not exist):\n";
+    temp.deleteCar(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp.showCar();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "BIKE\n";
+    cout << "Before\n";
+    temp1.showBike();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Bike with ID=2 (exist):\n";
+    temp1.deleteBike(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Bike with ID=3 (not exist):\n";
+    temp1.deleteBike(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp1.showBike();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "SCOOTER\n";
+    cout << "Before\n";
+    temp2.showScooter();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Scooter with ID=2 (exist):\n";
+    temp2.deleteScooter(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Scooter with ID=3 (not exist):\n";
+    temp2.deleteScooter(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp2.showScooter();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "PASSENGER\n";
+    cout << "Before\n";
+    temp3.showPassenger();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Passenger with ID=2 (exist):\n";
+    temp3.deletePassenger(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a Passenger with ID=3 (not exist):\n";
+    temp3.deletePassenger(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp3.showPassenger();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "DRIVER\n";
+    cout << "Before\n";
+    temp4.showDriver();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a driver with ID=2 (exist):\n";
+    temp4.deleteDriver(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a driver with ID=3 (not exist):\n";
+    temp4.deleteDriver(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp4.showDriver();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "BUS\n";
+    cout << "Before\n";
+    temp5.showBus();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a bus with ID=2 (exist):\n";
+    temp5.deleteBus(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a bus with ID=3 (not exist):\n";
+    temp5.deleteBus(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp5.showBus();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "METRO\n";
+    cout << "Before\n";
+    temp6.showMetro();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a metro with ID=2 (exist):\n";
+    temp6.deleteMetro(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a metro with ID=3 (not exist):\n";
+    temp6.deleteMetro(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp6.showMetro();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
 }
+
 

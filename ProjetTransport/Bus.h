@@ -19,6 +19,8 @@ public:
 	bool handicapEquiped;
 	void addBus(int id, short departure, short arrival, int busNumber, int numberOfPlaces, bool weekEnd, bool handicapEquiped);
 	void showBus();
+	void deleteBus(int d);
+	Bus findBus(int z);
 
 private:
 

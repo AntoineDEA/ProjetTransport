@@ -12,15 +12,17 @@ class Car : public Vehicule
 {
 	public:
 		Car();
-		void addCar(int id, char* matricul, int year, int commission, char* marq, int number);
+		void addCar(int id, char matricul, int year, int commission, char marq, int number);
 		void showCar();
-		void carValid(int i);
+		Car findCar(int z);
+		void deleteCar(int d);
+		bool carValid(int i);
 
 	protected:
 
 
 	private:
-		char* marq;
+		char marq;
 		int numberOfPlaces;
 		
 };

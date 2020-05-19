@@ -29,7 +29,7 @@ void Passenger::addPassenger(int idG, short nameG, short surnameG, short mailG, 
 	myPassenger.tram = tramG;
 
 	cout <<
-		"\n Passenger add :\n ID:" << myPassenger.id <<
+		"\n Passenger add : ID:" << myPassenger.id <<
 		"| Name :" << myPassenger.name <<
 		"| Surname:" << myPassenger.surname <<
 		"| Mail :" << myPassenger.mail <<
@@ -63,4 +63,47 @@ void Passenger::showPassenger()
 		cout << "| Metro abonnement :" << myPassengerTemp.metro ;
 		cout << "| Tram abonnement :" << myPassengerTemp.tram << "\n";
 	}
+}
+
+void Passenger::deletePassenger(int d)
+{
+	int vectorSize = MyPassengers.size();
+	Passenger myPassengerTemp;
+	for (int i = 1; i < vectorSize; i++)
+	{
+		myPassengerTemp = MyPassengers[i];
+		if (myPassengerTemp.id == d)
+		{
+			MyPassengers.erase(MyPassengers.begin() + i);
+			return;
+		}
+	}
+	cout << "This passenger already doesnt exist\n";
+}
+
+Passenger Passenger::findPassenger(int z)
+{
+	int vectorSize = MyPassengers.size();
+	Passenger myPassengerTemp;
+	for (int i = 0; i < vectorSize; i++)
+	{
+		myPassengerTemp = MyPassengers[i];
+		if (myPassengerTemp.id == z)
+		{
+			cout << "We find the passenger here is the details:\n";
+			cout << "ID :" << myPassengerTemp.id;
+			cout << "| Name :" << myPassengerTemp.name;
+			cout << "| Surname :" << myPassengerTemp.surname;
+			cout << "| Mail :" << myPassengerTemp.mail;
+			cout << "| Number :" << myPassengerTemp.number;
+			cout << "| Gender :" << myPassengerTemp.gender;
+			cout << "| Age :" << myPassengerTemp.age;
+			cout << "| Vehicul abonnement :" << myPassengerTemp.vehicul;
+			cout << "| Bus abonnement :" << myPassengerTemp.bus;
+			cout << "| Metro abonnement :" << myPassengerTemp.metro;
+			cout << "| Tram abonnement :" << myPassengerTemp.tram << "\n";
+			return myPassengerTemp;
+		}
+	}
+	cout << "This passenger does not exist\n";
 }

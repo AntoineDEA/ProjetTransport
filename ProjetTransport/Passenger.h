@@ -19,6 +19,8 @@ public:
 	bool tram;
 	void addPassenger(int id, short name, short surname, short mail, int number, char gender, int age, bool vehicul, bool bus, bool metro, bool tram);
 	void showPassenger();
+	void deletePassenger(int d);
+	Passenger findPassenger(int z);
 
 private:
 

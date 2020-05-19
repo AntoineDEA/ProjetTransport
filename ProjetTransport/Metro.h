@@ -16,6 +16,8 @@ public:
 	int numberOfPlaces;
 	void addMetro(int id, short departure, short arrival, int busNumber, int numberOfPlaces);
 	void showMetro();
+	void deleteMetro(int d);
+	Metro findMetro(int z);
 
 private:
 

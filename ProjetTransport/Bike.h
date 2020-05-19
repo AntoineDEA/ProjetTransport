@@ -13,7 +13,9 @@ class Bike : public Vehicule
 	public:
 		Bike();
 		void showBike();
-		void addBike(int idG, char* matriculG, int yearG, int commissionG, int numberOfPlaces, char size);
+		Bike findBike(int z);
+		void deleteBike(int d);
+		void addBike(int idG, char matriculG, int yearG, int commissionG, int numberOfPlaces, char size);
 
 	private:
 		int numberOfPlaces;

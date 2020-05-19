@@ -11,7 +11,7 @@ public:
 
 protected:
 	int id;
-	char* matricul;
+	char matricul;
 	int yearLastTechnicalConsult;
 	int commissioningYear;
 

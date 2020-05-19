@@ -29,7 +29,7 @@ void Driver::addDriver(int idG, short nameG, short surnameG, short mailG, int nu
 	myDriver.yearServiceStart = yearServiceStartG;
 
 	cout <<
-		"\n Driver add :\n ID:" << myDriver.id <<
+		"\n Driver add : ID:" << myDriver.id <<
 		"| Name :" << myDriver.name <<
 		"| Surname:" << myDriver.surname <<
 		"| Mail :" << myDriver.mail <<
@@ -64,4 +64,48 @@ void Driver::showDriver()
 		cout << "| Tram abonnement :" << myDriverTemp.tram ;
 		cout << "| Year of service start :" << myDriverTemp.yearServiceStart << "\n";
 	}
+}
+
+void Driver::deleteDriver(int d)
+{
+	int vectorSize = MyDrivers.size();
+	Driver myDriverTemp;
+	for (int i = 1; i < vectorSize; i++)
+	{
+		myDriverTemp = MyDrivers[i];
+		if (myDriverTemp.id == d)
+		{
+			MyDrivers.erase(MyDrivers.begin() + i);
+			return;
+		}
+	}
+	cout << "This driver already doesnt exist\n";
+}
+
+Driver Driver::findDriver(int z)
+{
+	int vectorSize = MyDrivers.size();
+	Driver myDriverTemp;
+	for (int i = 0; i < vectorSize; i++)
+	{
+		myDriverTemp = MyDrivers[i];
+		if (myDriverTemp.id == z)
+		{
+			cout << "We find your driver here is the details:\n";
+			cout << "ID :" << myDriverTemp.id;
+			cout << "| Name :" << myDriverTemp.name;
+			cout << "| Surname :" << myDriverTemp.surname;
+			cout << "| Mail :" << myDriverTemp.mail;
+			cout << "| Number :" << myDriverTemp.number;
+			cout << "| Gender :" << myDriverTemp.gender;
+			cout << "| Age :" << myDriverTemp.age;
+			cout << "| Bus abonnement :" << myDriverTemp.bus;
+			cout << "| Metro abonnement :" << myDriverTemp.metro;
+			cout << "| Tram abonnement :" << myDriverTemp.tram;
+			cout << "| Year of service start :" << myDriverTemp.yearServiceStart << "\n";
+			return myDriverTemp;
+		}
+	}
+
+	cout << "This driver does not exist\n";
 }

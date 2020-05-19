@@ -12,11 +12,13 @@ class Scooter : Vehicule
 // Means: create a Scooter class which inherits from the Vehicle class
 	public:
 		Scooter();
-		void addScooter(int id, char* matricul, int year, int commission, char* marq, int number);
+		void addScooter(int id, char matricul, int year, int commission, char marq, int number);
 		void showScooter();
+		void deleteScooter(int d);
+		Scooter findScooter(int z);
 
 	private:
-		char * marq;
+		char  marq;
 		int numberOfPlaces;
 };
 

@@ -25,7 +25,7 @@ void Tram::addTram(int idG, short departureG, short arrivalG, int busNumberG, in
 	myTram.handicapEquiped = handicapEquipedG;
 
 	cout <<
-		"\n Tram add :\n ID:" << myTram.id <<
+		"\n Tram add : ID:" << myTram.id <<
 		"| Departure :" << myTram.departure <<
 		"| Arrival:" << myTram.arrival <<
 		"| Tram Number :" << myTram.tramNumber <<
@@ -51,4 +51,27 @@ void Tram::showTram()
 		cout << "| Working on WeekEnds :" << myTramTemp.weekEnd ;
 		cout << "| Adapted for handicap :" << myTramTemp.handicapEquiped << "\n";
 	}
+}
+
+Tram Tram::findTram(int z)
+{
+	int vectorSize = MyTrams.size();
+	Tram myTramTemp;
+	for (int i = 0; i < vectorSize; i++)
+	{
+		myTramTemp = MyTrams[i];
+		if (myTramTemp.id == z)
+		{
+			cout << "We find your transport here is the details:\n";
+			cout << "ID :" << myTramTemp.id;
+			cout << "| Departure :" << myTramTemp.departure;
+			cout << "| Arrival :" << myTramTemp.arrival;
+			cout << "| Tram number :" << myTramTemp.tramNumber;
+			cout << "| Number of places :" << myTramTemp.numberOfPlaces;
+			cout << "| Working on WeekEnds :" << myTramTemp.weekEnd;
+			cout << "| Adapted for handicap :" << myTramTemp.handicapEquiped << "\n";
+			return myTramTemp;
+		}
+	}
+	cout << "This transport does not exist\n";
 }

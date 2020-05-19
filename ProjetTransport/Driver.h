@@ -18,6 +18,8 @@ public:
 	int yearServiceStart;
 	void addDriver(int id, short name, short surname, short mail, int number, char gender, int age, bool bus, bool metro, bool tram, int yearServiceStart);
 	void showDriver();
+	void deleteDriver(int d);
+	Driver findDriver(int z);
 
 
 private:
