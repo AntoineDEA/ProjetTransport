@@ -67,47 +67,47 @@ bool Reservation::ScooterIsValid(int id, int day, int month, int year)
 	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
 		myReservationTemp = MyReservationsScooter[i]; //For each steps I assign to my temporary object all the values from the vector object
-		if (myReservationTemp.day == day)
+		if (myReservationTemp.day == day) //This if is when I find an object who have the day than the day asked in parameters
 		{
-			if (myReservationTemp.month == month)
+			if (myReservationTemp.month == month) //This if is when I find an object who have the month than the month asked in parameters
 			{
-				if (myReservationTemp.year == year)
+				if (myReservationTemp.year == year) //This if is when I find an object who have the year than the year asked in parameters
 				{
 					scooterIsValid = 0;
 				}
 			}
 		}
 	}
-	return scooterIsValid;
+	return scooterIsValid; //Returning the boolean I want
 }
 
 bool Reservation::CarIsValid(int id, int day, int month, int year)
 {
-	bool CarIsValid = 1;
-	int vectorSize = MyReservationsCar.size();
-	Reservation myReservationTemp;
-	for (int i = 0; i < vectorSize; i++)
+	bool CarIsValid = 1; //This boolean will be what I am going to return at the end
+	int vectorSize = MyReservationsCar.size(); // getting the size of my vector to read all the objects in it 
+	Reservation myReservationTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myReservationTemp = MyReservationsCar[i];
-		if (myReservationTemp.day == day)
+		myReservationTemp = MyReservationsCar[i]; //For each steps I assign to my temporary object all the values from the vector object
+		if (myReservationTemp.day == day) //This if is when I find an object who have the day than the day asked in parameters
 		{
-			if (myReservationTemp.month == month)
+			if (myReservationTemp.month == month) //This if is when I find an object who have the month than the month asked in parameters
 			{
-				if (myReservationTemp.year == year)
+				if (myReservationTemp.year == year) //This if is when I find an object who have the year than the year asked in parameters
 				{
 					CarIsValid = 0;
 				}
 			}
 		}
 	}
-	return CarIsValid;
+	return CarIsValid; //Returning the boolean I want
 }
 
 void Reservation::addReservationBike(int idG, int dayG, int monthG, int yearG, int idUserG, int idVehicleG)
 {
-	Reservation myReservation;
+	Reservation myReservation; // Creation of a temporary object
 
-	myReservation.id = idG;
+	myReservation.id = idG; // I assign my variables tooked from my parameters to my temporary object
 	myReservation.day = dayG;
 	myReservation.month = monthG;
 	myReservation.year = yearG;
@@ -122,14 +122,14 @@ void Reservation::addReservationBike(int idG, int dayG, int monthG, int yearG, i
 		"| User ID : " << myReservation.idUser <<
 		"| Vehicle ID :" << myReservation.idVehicle << "\n";
 
-	bool validUser = myReservation.userIsValid(idUserG);
-	bool validBike = myReservation.bikeIsValid(idG, dayG, monthG, yearG);
+	bool validUser = myReservation.userIsValid(idUserG); //I'm checking if my user is authorized to rent a vehicle
+	bool validBike = myReservation.bikeIsValid(idG, dayG, monthG, yearG); //I'm checking if the vehicle is available at this time
 
-	if (validUser == 1)
+	if (validUser == 1) // cheking number one
 	{
-		if (validBike == 1)
+		if (validBike == 1) // checking number two
 		{
-			MyReservationsBike.push_back(myReservation);
+			MyReservationsBike.push_back(myReservation); //Creation of my reservation and I put her in my list
 			cout << "Bike Created\n";
 		}
 		else
@@ -147,9 +147,9 @@ void Reservation::addReservationBike(int idG, int dayG, int monthG, int yearG, i
 
 void Reservation::addReservationCar(int idG, int dayG, int monthG, int yearG, int idUserG, int idVehicleG)
 {
-	Reservation myReservation;
+	Reservation myReservation; // Creation of a temporary object
 
-	myReservation.id = idG;
+	myReservation.id = idG; // I assign my variables tooked from my parameters to my temporary object
 	myReservation.day = dayG;
 	myReservation.month = monthG;
 	myReservation.year = yearG;
@@ -164,14 +164,14 @@ void Reservation::addReservationCar(int idG, int dayG, int monthG, int yearG, in
 		"| User ID : " << myReservation.idUser <<
 		"| Vehicle ID :" << myReservation.idVehicle << "\n";
 
-	bool validUser = myReservation.userIsValid(idUserG);
-	bool validCar = myReservation.CarIsValid(idG, dayG, monthG, yearG);
+	bool validUser = myReservation.userIsValid(idUserG); //I'm checking if my user is authorized to rent a vehicle
+	bool validCar = myReservation.CarIsValid(idG, dayG, monthG, yearG); //I'm checking if the vehicle is available at this time
 
-	if (validUser == 1)
+	if (validUser == 1) // cheking number one
 	{
-		if (validCar == 1)
+		if (validCar == 1) // checking number two
 		{
-			MyReservationsCar.push_back(myReservation);
+			MyReservationsCar.push_back(myReservation); //Creation of my reservation and I put her in my list
 			cout << "Car Created\n";
 		}
 		else
@@ -189,9 +189,9 @@ void Reservation::addReservationCar(int idG, int dayG, int monthG, int yearG, in
 
 void Reservation::addReservationScooter(int idG, int dayG, int monthG, int yearG, int idUserG, int idVehicleG)
 {
-	Reservation myReservation;
+	Reservation myReservation; // Creation of a temporary object
 
-	myReservation.id = idG;
+	myReservation.id = idG; // I assign my variables tooked from my parameters to my temporary object
 	myReservation.day = dayG;
 	myReservation.month = monthG;
 	myReservation.year = yearG;
@@ -206,14 +206,14 @@ void Reservation::addReservationScooter(int idG, int dayG, int monthG, int yearG
 		"| User ID : " << myReservation.idUser <<
 		"| Vehicle ID :" << myReservation.idVehicle << "\n";
 
-	bool validUser = myReservation.userIsValid(idUserG);
-	bool validScooter = myReservation.ScooterIsValid(idG, dayG, monthG, yearG);
+	bool validUser = myReservation.userIsValid(idUserG); //I'm checking if my user is authorized to rent a vehicle
+	bool validScooter = myReservation.ScooterIsValid(idG, dayG, monthG, yearG); //I'm checking if the vehicle is available at this time
 
-	if (validUser == 1)
+	if (validUser == 1) // cheking number one
 	{
-		if (validScooter == 1)
+		if (validScooter == 1) // cheking number two
 		{
-			MyReservationsScooter.push_back(myReservation);
+			MyReservationsScooter.push_back(myReservation); //Creation of my reservation and I put her in my list
 			cout << "Scooter Created\n";
 		}
 		else
@@ -231,11 +231,11 @@ void Reservation::addReservationScooter(int idG, int dayG, int monthG, int yearG
 
 void Reservation::showReservationsBike()
 {
-	int vectorSize = MyReservationsBike.size();
-	Reservation myReservationTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyReservationsBike.size(); // getting the size of my vector to read all the objects in it 
+	Reservation myReservationTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myReservationTemp = MyReservationsBike[i];
+		myReservationTemp = MyReservationsBike[i]; //For each steps I assign to my temporary object all the values from the vector object
 		cout << "ID Bike :" << myReservationTemp.id;
 		cout << "| Day :" << myReservationTemp.day;
 		cout << "| Month :" << myReservationTemp.month;
@@ -248,11 +248,11 @@ void Reservation::showReservationsBike()
 
 void Reservation::showReservationsCar()
 {
-	int vectorSize = MyReservationsCar.size();
-	Reservation myReservationTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyReservationsCar.size(); // getting the size of my vector to read all the objects in it 
+	Reservation myReservationTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myReservationTemp = MyReservationsCar[i];
+		myReservationTemp = MyReservationsCar[i]; //For each steps I assign to my temporary object all the values from the vector object
 		cout << "ID Car :" << myReservationTemp.id;
 		cout << "| Day :" << myReservationTemp.day;
 		cout << "| Month :" << myReservationTemp.month;
@@ -265,11 +265,11 @@ void Reservation::showReservationsCar()
 
 void Reservation::showReservationsScooter()
 {
-	int vectorSize = MyReservationsScooter.size();
-	Reservation myReservationTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyReservationsScooter.size(); // getting the size of my vector to read all the objects in it 
+	Reservation myReservationTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myReservationTemp = MyReservationsScooter[i];
+		myReservationTemp = MyReservationsScooter[i]; //For each steps I assign to my temporary object all the values from the vector object
 		cout << "ID Scooter :" << myReservationTemp.id;
 		cout << "| Day :" << myReservationTemp.day;
 		cout << "| Month :" << myReservationTemp.month;
