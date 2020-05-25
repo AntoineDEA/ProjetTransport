@@ -156,6 +156,7 @@
     <ClCompile Include="People.cpp" />
     <ClCompile Include="ProjetTransport.cpp" />
     <ClCompile Include="PublicTransport.cpp" />
+    <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="Scooter.cpp" />
     <ClCompile Include="Tram.cpp" />
     <ClCompile Include="Vehicule.cpp" />
@@ -169,6 +170,7 @@
     <ClInclude Include="Passenger.h" />
     <ClInclude Include="People.h" />
     <ClInclude Include="PublicTransport.h" />
+    <ClInclude Include="Reservation.h" />
     <ClInclude Include="Scooter.h" />
     <ClInclude Include="Tram.h" />
     <ClInclude Include="Vehicule.h" />

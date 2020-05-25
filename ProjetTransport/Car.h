@@ -16,10 +16,10 @@ class Car : public Vehicule
 		void showCar();
 		Car findCar(int z);
 		void deleteCar(int d);
+		void allCarValid();
 		bool carValid(int i);
 
 	protected:
-
 
 	private:
 		char marq;

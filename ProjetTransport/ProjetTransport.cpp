@@ -10,6 +10,7 @@
 #include "Bus.h"
 #include "Metro.h"
 #include "Tram.h"
+#include "Reservation.h"
 
 using namespace std;
 
@@ -93,21 +94,8 @@ int main()
     temp7.showTram();
     cout << "-----------------------------------------------\n";
     cout << "-----------------------------------------------\n";
+    Reservation temp8;
 
-    //-----------------------------------------------------------------------------
-    //This Part show the test of the function validity last technical consult of a vehicle
-    //-----------------------------------------------------------------------------
-    
-    /*
-    cout << "\n\nTECHNICAL CONSULT CHECK \n\n";
-    cout << "First test with a car having the last technical consult made in 2019\n";
-    temp.carValid(1);
-    cout << "-----------------------------------------------\n";
-    cout << "Second test with a car having the last technical consult made in 2000\n";
-    temp.carValid(2);
-    cout << "-----------------------------------------------\n";
-    cout << "-----------------------------------------------\n";
-    */
 
     //-----------------------------------------------------------------------------
     //This Part show the test of each find functions of each classes
@@ -199,6 +187,7 @@ int main()
     //This Part show the test of each delete functions of each classes
     //-----------------------------------------------------------------------------
     
+    /*
     cout << "\n\nDELETE FUNCTION CHECK\n\n";
     cout << "CAR\n";
     cout << "Before\n";
@@ -298,6 +287,109 @@ int main()
     temp6.showMetro();
     cout << "----------------------------------------------\n";
     cout << "-----------------------------------------------\n";
-}
+    cout << "TRAM\n";
+    cout << "Before\n";
+    temp7.showTram();
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a tram with ID=2 (exist):\n";
+    temp7.deleteTram(2);
+    cout << "-----------------------------------------------\n";
+    cout << "Delete a tram with ID=3 (not exist):\n";
+    temp7.deleteTram(2);
+    cout << "-----------------------------------------------\n";
+    cout << "After\n";
+    temp7.showTram();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    */
+
+    //-----------------------------------------------------------------------------
+    //This Part show the test of the function validity last technical consult of a vehicle
+    //-----------------------------------------------------------------------------
+
+    /*
+    cout << "\n\nTECHNICAL CONSULT CHECK \n\n";
+    cout << "First test with a car having the last technical consult made in 2019\n";
+    temp.carValid(1);
+    cout << "-----------------------------------------------\n";
+    cout << "Second test with a car having the last technical consult made in 2000\n";
+    temp.carValid(2);
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    */
+    
+    //-----------------------------------------------------------------------------
+    //This Part show all the vehicles that need to pass a technical consult
+    //-----------------------------------------------------------------------------
+    
+    /*
+    cout << "CAR WHO NEED TECHNICAL CHECK\n";
+    cout << "-----------------------------------------------\n";
+    temp.allCarValid();
+    cout << "----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    */
+
+    //-----------------------------------------------------------------------------
+    //This Part show all the function related to the Reservation class for Bikes
+    //-----------------------------------------------------------------------------
+    
+    /*
+    cout << "RESERVATION CREATION\n";
+    temp8.addReservationBike(2, 20, 2, 2019, 2, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "SHOW RESERVATIONS\n";
+    temp8.showReservationsBike();
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a user who don't have the permission\n";
+    temp8.addReservationBike(1, 19, 2, 2019, 1, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a bike already located this day\n";
+    temp8.addReservationBike(2, 20, 2, 2019, 2, 2);
+    */
+
+    //-----------------------------------------------------------------------------
+    //This Part show all the function related to the Reservation class for Cars
+    //-----------------------------------------------------------------------------
+    
+    /*
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "RESERVATION CREATION\n";
+    temp8.addReservationCar(2, 20, 2, 2019, 2, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "SHOW RESERVATIONS\n";
+    temp8.showReservationsCar();
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a user who don't have the permission\n";
+    temp8.addReservationCar(1, 19, 2, 2019, 1, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a bike already located this day\n";
+    temp8.addReservationCar(2, 20, 2, 2019, 2, 2);
+    */
+
+    //-----------------------------------------------------------------------------
+    //This Part show all the function related to the Reservation class for Scooters
+    //-----------------------------------------------------------------------------
+
+    /*
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "RESERVATION CREATION\n";
+    temp8.addReservationScooter(2, 20, 2, 2019, 2, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "SHOW RESERVATIONS\n";
+    temp8.showReservationsScooter();
+    cout << "-----------------------------------------------\n";
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a user who don't have the permission\n";
+    temp8.addReservationScooter(1, 19, 2, 2019, 1, 2);
+    cout << "-----------------------------------------------\n";
+    cout << "Attempt to create a reservation with a bike already located this day\n";
+    temp8.addReservationScooter(2, 20, 2, 2019, 2, 2);
+    */
+}   
 
 

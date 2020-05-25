@@ -1,57 +1,52 @@
-﻿  Bus.cpp
-  Metro.cpp
-  ProjetTransport.cpp
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(26,49): warning C4305: 'argument' : troncation de 'int' à 'char'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(26,40): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(26,20): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(27,48): warning C4305: 'argument' : troncation de 'int' à 'char'
+﻿  ProjetTransport.cpp
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(27,49): warning C4305: 'argument' : troncation de 'int' à 'char'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(27,40): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(27,20): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(35,48): warning C4305: 'argument' : troncation de 'int' à 'char'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(35,22): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(28,48): warning C4305: 'argument' : troncation de 'int' à 'char'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(28,40): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(28,20): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(36,48): warning C4305: 'argument' : troncation de 'int' à 'char'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(36,22): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(44,53): warning C4305: 'argument' : troncation de 'int' à 'char'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(44,44): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(44,25): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(37,48): warning C4305: 'argument' : troncation de 'int' à 'char'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(37,22): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(45,53): warning C4305: 'argument' : troncation de 'int' à 'char'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(45,44): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(45,25): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,77): warning C4305: 'argument' : troncation de 'int' à 'short'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,41): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,34): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(53,27): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(46,53): warning C4305: 'argument' : troncation de 'int' à 'char'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(46,44): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(46,25): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(54,77): warning C4305: 'argument' : troncation de 'int' à 'short'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(54,41): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(54,34): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(54,27): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,77): warning C4305: 'argument' : troncation de 'int' à 'short'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,38): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,31): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(62,24): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(55,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(55,41): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(55,34): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(55,27): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(63,77): warning C4305: 'argument' : troncation de 'int' à 'short'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(63,38): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(63,31): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(63,24): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,48): warning C4305: 'argument' : troncation de 'int' à 'short'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,28): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(71,21): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(64,77): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(64,38): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(64,31): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(64,24): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(72,48): warning C4305: 'argument' : troncation de 'int' à 'short'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(72,28): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(72,21): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,46): warning C4305: 'argument' : troncation de 'int' à 'short'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,30): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(80,23): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(73,48): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(73,28): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(73,21): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(81,46): warning C4305: 'argument' : troncation de 'int' à 'short'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(81,30): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(81,23): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,49): warning C4305: 'argument' : troncation de 'int' à 'short'
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,29): warning C4309: 'argument' : troncation de valeur de constante
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(89,22): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(82,46): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(82,30): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(82,23): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(90,49): warning C4305: 'argument' : troncation de 'int' à 'short'
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(90,29): warning C4309: 'argument' : troncation de valeur de constante
 C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(90,22): warning C4309: 'argument' : troncation de valeur de constante
-  Génération de code en cours...
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Metro.cpp(86): warning C4715: 'Metro::findMetro' : les chemins de contrôle ne retournent pas tous une valeur
-C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\Bus.cpp(96): warning C4715: 'Bus::findBus' : les chemins de contrôle ne retournent pas tous une valeur
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(91,49): warning C4305: 'argument' : troncation de 'int' à 'short'
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(91,29): warning C4309: 'argument' : troncation de valeur de constante
+C:\Users\antoi\source\repos\ProjetTransport\ProjetTransport\ProjetTransport.cpp(91,22): warning C4309: 'argument' : troncation de valeur de constante
   ProjetTransport.vcxproj -> C:\Users\antoi\source\repos\ProjetTransport\Debug\ProjetTransport.exe

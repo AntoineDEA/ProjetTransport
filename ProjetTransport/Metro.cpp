@@ -10,13 +10,13 @@ Metro::Metro() : PublicTransport()
 
 }
 
-vector<Metro> MyMetroes;
+vector<Metro> MyMetroes; //Creation of a vector to stack all of my objects
 
 void Metro::addMetro(int idG, short departureG, short arrivalG, int busNumberG, int numberOfPlacesG)
 {
-	Metro myMetro;
+	Metro myMetro; // Creation of a temporary object
 
-	myMetro.id = idG;
+	myMetro.id = idG; // I assign my variables tooked from my parameters to my temporary object
 	myMetro.departure = departureG;
 	myMetro.arrival = arrivalG;
 	myMetro.metroNumber = busNumberG;
@@ -30,17 +30,17 @@ void Metro::addMetro(int idG, short departureG, short arrivalG, int busNumberG, 
 		"| Metro Number :" << myMetro.metroNumber <<
 		"| Number of places : " << myMetro.numberOfPlaces << "\n";
 
-	MyMetroes.push_back(myMetro);
+	MyMetroes.push_back(myMetro); // once it's done i push this temporary object in mt vector list
 }
 
 void Metro::showMetro()
 {
-	int vectorSize = MyMetroes.size();
-	Metro myMetroTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyMetroes.size(); // getting the size of my vector to read all the objects in it 
+	Metro myMetroTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myMetroTemp = MyMetroes[i];
-		cout << "| ID :" << myMetroTemp.id ;
+		myMetroTemp = MyMetroes[i]; //For each steps I assign to my temporary object all the values from the vector object
+		cout << "| ID :" << myMetroTemp.id ; //And I display it
 		cout << "| Departure :" << myMetroTemp.departure ;
 		cout << "| Arrival :" << myMetroTemp.arrival ;
 		cout << "| Metro number :" << myMetroTemp.metroNumber ;
@@ -50,28 +50,28 @@ void Metro::showMetro()
 
 void Metro::deleteMetro(int d)
 {
-	int vectorSize = MyMetroes.size();
-	Metro myMetroTemp;
-	for (int i = 1; i < vectorSize; i++)
+	int vectorSize = MyMetroes.size(); // getting the size of my vector to read all the objects in it 
+	Metro myMetroTemp; // Creation of a temporary object
+	for (int i = 1; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myMetroTemp = MyMetroes[i];
-		if (myMetroTemp.id == d)
+		myMetroTemp = MyMetroes[i];  //For each steps I assign to my temporary object all the values from the vector object
+		if (myMetroTemp.id == d) //This IF is when I find the object i'm looking for, by using is ID
 		{
-			MyMetroes.erase(MyMetroes.begin() + i);
+			MyMetroes.erase(MyMetroes.begin() + i); //Then with the erase function I can delete this object from my vector
 			return;
 		}
 	}
-	cout << "This metro already doesnt exist\n";
+	cout << "This metro already doesnt exist\n"; //If I don't find my object it mean it already doesnt exist
 }
 
 Metro Metro::findMetro(int z)
 {
-	int vectorSize = MyMetroes.size();
-	Metro myMetroTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyMetroes.size(); // getting the size of my vector to read all the objects in it 
+	Metro myMetroTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myMetroTemp = MyMetroes[i];
-		if (myMetroTemp.id == z)
+		myMetroTemp = MyMetroes[i]; //For each steps I assign to my temporary object all the values from the vector object
+		if (myMetroTemp.id == z)  //This IF is when I find the object i'm looking for, by using is ID
 		{
 			cout << "We find your transport here is the details:\n";
 			cout << "| ID :" << myMetroTemp.id;
@@ -79,9 +79,9 @@ Metro Metro::findMetro(int z)
 			cout << "| Arrival :" << myMetroTemp.arrival;
 			cout << "| Metro number :" << myMetroTemp.metroNumber;
 			cout << "| Number of places :" << myMetroTemp.numberOfPlaces << "\n";
-			return myMetroTemp;
+			return myMetroTemp; //Then I return my Object
 		}
 	}
-	cout << "This transport does not exist\n";
+	cout << "This transport does not exist\n"; //If I don't find my object it mean it doesnt exist
 }
 

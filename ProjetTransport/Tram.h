@@ -18,6 +18,7 @@ public:
 	bool handicapEquiped;
 	void addTram(int id, short departure, short arrival, int busNumber, int numberOfPlaces, bool weekEnd, bool handicapEquiped);
 	void showTram();
+	void deleteTram(int d);
 	Tram findTram(int z);
 
 private:

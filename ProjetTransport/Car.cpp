@@ -5,21 +5,19 @@
 
 using namespace std;
 
-Car::Car() : Vehicule()
+Car::Car() : Vehicule() //inheritence from my Vehicle class
 {
 	Vehicule();
-	//this->marq = new char[strlen(marq) + 1];
-	//strcpy_s(this->marq,sizeof(marq), marq);
 	numberOfPlaces = 0;
 }
 
-vector<Car> MyCars;
+vector<Car> MyCars; //Creation of a vector to stack all of my objects
 
 void Car::addCar(int idG, char matriculG, int yearG, int commissionG, char marqG, int numberG)
 {
-	Car myCar;
+	Car myCar; // Creation of a temporary object
 
-	myCar.id = idG;
+	myCar.id = idG; // I assign my variables tooked from my parameters to my temporary object
 	myCar.matricul = matriculG;
 	myCar.yearLastTechnicalConsult = yearG;
 	myCar.commissioningYear = commissionG;
@@ -34,19 +32,19 @@ void Car::addCar(int idG, char matriculG, int yearG, int commissionG, char marqG
 		"| Marq : " << myCar.marq <<
 		"| Number of places :" << myCar.numberOfPlaces <<"\n";
 
-	MyCars.push_back(myCar);
+	MyCars.push_back(myCar); // once it's done i push this temporary object in mt vector list
 	
 }
 
 
 void Car::showCar()
 {
-	int vectorSize = MyCars.size();
-	Car myCarTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyCars.size(); // getting the size of my vector to read all the objects in it 
+	Car myCarTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myCarTemp=MyCars[i];
-		cout << "ID :" << myCarTemp.id ;
+		myCarTemp=MyCars[i]; //For each steps I assign to my temporary object all the values from the vector object
+		cout << "ID :" << myCarTemp.id ; //And I display it
 		cout << "| Matricul :" << myCarTemp.matricul ;
 		cout << "| Year Of the last technical consult :" << myCarTemp.yearLastTechnicalConsult;
 		cout << "| Commissioning year :" << myCarTemp.commissioningYear ;
@@ -57,12 +55,12 @@ void Car::showCar()
 
 Car Car::findCar(int z)
 {
-	int vectorSize = MyCars.size();
-	Car myCarTemp;
-	for (int i = 0; i < vectorSize; i++)
+	int vectorSize = MyCars.size(); // getting the size of my vector to read all the objects in it 
+	Car myCarTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myCarTemp = MyCars[i];
-		if (myCarTemp.id == z)
+		myCarTemp = MyCars[i];  //For each steps I assign to my temporary object all the values from the vector object
+		if (myCarTemp.id == z) //This IF is when I find the object i'm looking for, by using is ID
 		{
 			cout << "We find your vehicle here is the details:\n";
 			cout << "ID :" << myCarTemp.id;
@@ -71,49 +69,49 @@ Car Car::findCar(int z)
 			cout << "| Commissioning year :" << myCarTemp.commissioningYear;
 			cout << "| Marq :" << myCarTemp.marq;
 			cout << "| Number of places :" << myCarTemp.numberOfPlaces << "\n";
-			return myCarTemp;
+			return myCarTemp; //Then I return my Object
 		}
 	}
-	cout << "This vehicle does not exist\n";
+	cout << "This vehicle does not exist\n"; //If I don't find my object it mean it doesnt exist
 }
 
 void Car::deleteCar(int d)
 {
-	int vectorSize = MyCars.size();
-	Car myCarTemp;
-	for (int i = 1; i < vectorSize; i++)
+	int vectorSize = MyCars.size(); // getting the size of my vector to read all the objects in it 
+	Car myCarTemp; // Creation of a temporary object
+	for (int i = 1; i < vectorSize; i++) //starting a loop on all objects
 	{
-		myCarTemp = MyCars[i];
-		if (myCarTemp.id == d)
+		myCarTemp = MyCars[i]; //For each steps I assign to my temporary object all the values from the vector object
+		if (myCarTemp.id == d) //This IF is when I find the object i'm looking for, by using is ID
 		{
-			MyCars.erase(MyCars.begin() + i);
+			MyCars.erase(MyCars.begin() + i); //Then with the erase function I can delete this object from my vector
 			return;
 		}
 	}
-	cout << "This car already doesnt exist\n";
+	cout << "This car already doesnt exist\n"; //If I don't find my object it mean it already doesnt exist
 }
 
 bool Car::carValid(int i)
 {
-	bool val = 0;
+	bool val = 0; //This boolean will be what I am going to return at the end
 	int itterator = 0;
 	int x = 0;
 	int research = i;
-	while (itterator < 1)
+	while (itterator < 1) //This loop are going to step up until I find what I am looking for
 	{
-		Car myCarTemp;
-		myCarTemp = MyCars[x];
-		if (myCarTemp.id == i)
+		Car myCarTemp; // Creation of a temporary object
+		myCarTemp = MyCars[x]; //For each steps I assign to my temporary object all the values from the vector object
+		if (myCarTemp.id == i) //This IF is when I find the object i'm looking for, by using is ID
 		{
-			itterator = 1;
-			if (myCarTemp.yearLastTechnicalConsult > 2015)
+			itterator = 1; //This itterator swipping on 1 significate that my loop stop here
+			if (myCarTemp.yearLastTechnicalConsult > 2015) //This if check if the last technical consult has been made after 2015
 			{
-				val = 1;
+				val = 1; //The boolean I want switch on 1
 			}
 		}
 		else
 		{
-			x++;
+			x++; //Passing to the next object
 		}
 	}
 	if (val == 1)
@@ -124,5 +122,26 @@ bool Car::carValid(int i)
 	{
 		cout << "This vehicle is not valid\n";
 	}
-	return val;
+	return val; //Returning the boolean I want
+}
+
+void Car::allCarValid()
+{
+	cout << "This is all the cars that need to pass a technical check\n";
+	int vectorSize = MyCars.size(); // getting the size of my vector to read all the objects in it 
+	Car myCarTemp; // Creation of a temporary object
+	for (int i = 0; i < vectorSize; i++) //starting a loop on all objects
+	{
+		myCarTemp = MyCars[i]; //For each steps I assign to my temporary object all the values from the vector object
+		if (myCarTemp.yearLastTechnicalConsult < 2015) //This if check if the last technical consult has been made after 2015
+		{
+			cout << "ID :" << myCarTemp.id;
+			cout << "| Matricul :" << myCarTemp.matricul;
+			cout << "| Year Of the last technical consult :" << myCarTemp.yearLastTechnicalConsult;
+			cout << "| Commissioning year :" << myCarTemp.commissioningYear;
+			cout << "| Marq :" << myCarTemp.marq;
+			cout << "| Number of places :" << myCarTemp.numberOfPlaces << "\n";
+		}
+		
+	}
 }
